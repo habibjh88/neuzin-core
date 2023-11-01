@@ -3,16 +3,13 @@
 Plugin Name: Neuzin Core
 Plugin URI: https://www.radiustheme.com
 Description: Neuzin Core Plugin for Neuzin Theme
-Version: 2.0.0
+Version: 1.0.0
 Author: RadiusTheme
 Author URI: https://www.radiustheme.com
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
-}
-if ( ! defined( 'NEUZIN_VERSION' ) ) {
-	return;
 }
 
 if ( ! defined( 'NEUZIN_CORE' ) ) {
@@ -59,7 +56,6 @@ class Neuzin_Core {
 		require_once 'widget/rt-open-hour-widget.php';
 		require_once 'widget/search-widget.php'; // override default
 		require_once 'widget/rt-product-box.php';
-
 		require_once 'widget/widget-settings.php';
 		require_once 'widget/rt-widget-fields.php';
 
