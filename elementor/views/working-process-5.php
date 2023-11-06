@@ -1,14 +1,14 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 use NeuzinTheme_Helper;
 use Elementor\Utils;
-use radiustheme\Lib\WP_SVG;
+use devofwp\Lib\WP_SVG;
 extract($data);
 
 $attr = '';

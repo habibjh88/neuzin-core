@@ -1,11 +1,11 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 
 if ( !empty( $data['sub_title_shape'] == 'yes' ) ) {
 	$line_shape = 'sub-title-shape';

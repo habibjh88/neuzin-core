@@ -1406,7 +1406,7 @@ msgstr ""
 
 #. URI of the plugin
 #. Author URI of the plugin
-msgid "https://www.radiustheme.com"
+msgid "https://www.devofwp.com"
 msgstr ""
 
 #: elementor/widgets/counter.php:79 elementor/widgets/info-box.php:139
@@ -2240,11 +2240,11 @@ msgid "Product Display Widget"
 msgstr ""
 
 #. Author of the plugin
-msgid "RadiusTheme"
+msgid "DevOfWP"
 msgstr ""
 
 #: elementor/init.php:106
-msgid "RadiusTheme Elements"
+msgid "DevOfWP Elements"
 msgstr ""
 
 #: elementor/widgets/portfolio-grid.php:109

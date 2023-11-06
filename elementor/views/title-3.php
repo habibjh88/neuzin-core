@@ -1,11 +1,11 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 ?>
 <div class="section-default-style section-title-<?php echo esc_attr( $data['style'] ); ?>">
 	<div class="section-title-holder <?php echo esc_attr( $data['animation_display'] ); ?>">	

@@ -1,11 +1,11 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 
 use \FW_Ext_Backups_Demo;
 use \WPCF7_ContactFormTemplate;
@@ -47,162 +47,162 @@ class Demo_Importer
             'demo1' => array(
                 'title' => __('Home 1', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot1.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/',
             ),       
             'demo2' => array(
                 'title' => __('Home 2', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot2.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-2/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-2/',
             ),
             'demo3' => array(
                 'title' => __('Home 3', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot3.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-3/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-3/',
             ),
             'demo4' => array(
                 'title' => __('Home 4', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot4.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-4/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-4/',
             ),
             'demo5' => array(
                 'title' => __('Home 5', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot5.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-5/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-5/',
             ),
             'demo6' => array(
                 'title' => __('Home 6', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot6.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-6/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-6/',
             ),
             'demo7' => array(
                 'title' => __('Home 7', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot7.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-7/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-7/',
             ),
             'demo8' => array(
                 'title' => __('Home 8', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot8.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-8/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-8/',
             ),
             'demo9' => array(
                 'title' => __('Home 9', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot9.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-9/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-9/',
             ),
             'demo10' => array(
                 'title' => __('Home 10', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot10.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-10/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-10/',
             ),
             'demo11' => array(
                 'title' => __('Home 11', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot11.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-11/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-11/',
             ),
             'demo12' => array(
                 'title' => __('Home 12', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot12.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-12/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-12/',
             ), 
             'demo13' => array(
                 'title' => __('Home 13', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot13.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-13/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-13/',
             ),
             'demo14' => array(
                 'title' => __('Home 14', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot14.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-14/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-14/',
             ),
             'demo15' => array(
                 'title' => __('Home 15', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot15.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-15/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-15/',
             ),
             'demo16' => array(
                 'title' => __('Home 16', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot16.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home-16/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home-16/',
             ),
             'demo17' => array(
                 'title' => __('Home 1 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot1.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home1-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home1-one-page/',
             ),
             'demo18' => array(
                 'title' => __('Home 2 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot2.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home2-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home2-one-page/',
             ),
             'demo19' => array(
                 'title' => __('Home 3 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot3.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home3-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home3-one-page/',
             ),
             'demo20' => array(
                 'title' => __('Home 4 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot4.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home4-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home4-one-page/',
             ),
             'demo21' => array(
                 'title' => __('Home 6 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot6.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home6-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home6-one-page/',
             ),
             'demo22' => array(
                 'title' => __('Home 7 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot7.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home7-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home7-one-page/',
             ),
             'demo23' => array(
                 'title' => __('Home 8 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot8.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home8-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home8-one-page/',
             ),
             'demo24' => array(
                 'title' => __('Home 9 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot9.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home9-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home9-one-page/',
             ),
             'demo25' => array(
                 'title' => __('Home 10 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot10.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home10-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home10-one-page/',
             ),
             'demo26' => array(
                 'title' => __('Home 11 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot11.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home11-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home11-one-page/',
             ),
             'demo27' => array(
                 'title' => __('Home 12 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot12.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home12-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home12-one-page/',
             ),
             'demo28' => array(
                 'title' => __('Home 13 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot13.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home13-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home13-one-page/',
             ),
             'demo29' => array(
                 'title' => __('Home 14 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot14.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home14-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home14-one-page/',
             ),
             'demo30' => array(
                 'title' => __('Home 15 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot15.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home15-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home15-one-page/',
             ),
             'demo31' => array(
                 'title' => __('Home 16 ( One Page )', 'neuzin-core'),
                 'screenshot' => plugins_url('screenshots/screenshot16.jpg', __FILE__),
-                'preview_link' => 'https://radiustheme.com/demo/wordpress/themes/neuzin/home16-one-page/',
+                'preview_link' => 'https://devofwp.com/demo/wordpress/themes/neuzin/home16-one-page/',
             ),
  
         );
 
-        $download_url = 'http://demo.radiustheme.com/wordpress/demo-content/neuzin/';
+        $download_url = 'http://demo.devofwp.com/wordpress/demo-content/neuzin/';
 
         foreach ($demos_array as $id => $data) {
             $demo = new FW_Ext_Backups_Demo($id, 'piecemeal', array(
