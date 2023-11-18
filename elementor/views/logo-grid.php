@@ -1,11 +1,11 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 
 $lg_item = ( 12 / $data['col_lg']);
 $md_item = ( 12 / $data['col_md']);

@@ -1,6 +1,6 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
@@ -9,7 +9,7 @@ namespace radiustheme\Neuzin_Core;
 use devofwp\Neuzin\Helper;
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
-use radiustheme\Lib\WP_SVG;
+use devofwp\Lib\WP_SVG;
 extract($data);
 
 $attr = '';

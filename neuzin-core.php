@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: Neuzin Core
-Plugin URI: https://www.radiustheme.com
+Plugin URI: https://www.devofwp.com
 Description: Neuzin Core Plugin for Neuzin Theme
 Version: 1.0.0
-Author: RadiusTheme
-Author URI: https://www.radiustheme.com
+Author: DevOfWP
+Author URI: https://www.devofwp.com
 */
 
 if ( ! defined( 'ABSPATH' ) ) {

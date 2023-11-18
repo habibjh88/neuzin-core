@@ -1,11 +1,11 @@
 <?php
 /**
- * @author  RadiusTheme
+ * @author  DevOfWP
  * @since   1.0
  * @version 1.0
  */
 
-namespace radiustheme\Neuzin_Core;
+namespace devofwp\Neuzin_Core;
 
 use Elementor\Plugin;
 use \WP_Query;
@@ -107,7 +107,7 @@ class Custom_Widget_Init {
 	public function widget_categoty_old( $class ) {
 		$id         = NEUZIN_CORE_THEME_PREFIX . '-widgets'; // Category /@dev
 		$properties = array(
-			'title' => __( 'RadiusTheme Elements', 'neuzin-core' ),
+			'title' => __( 'DevOfWP Elements', 'neuzin-core' ),
 		);
 
 		Plugin::$instance->elements_manager->add_category( $id, $properties );
