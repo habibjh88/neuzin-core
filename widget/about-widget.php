@@ -5,7 +5,7 @@
  * @version 1.0
  */
 
-class NeuzinTheme_About_Widget extends WP_Widget {
+class Theme_About_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
             'neuzin_about_info', // Base ID

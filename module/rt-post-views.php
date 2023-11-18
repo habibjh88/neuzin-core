@@ -4,7 +4,8 @@
  * @since   1.0
  * @version 1.0
  */
-
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 if( ! class_exists( 'RT_POST_VIEWS' )){
@@ -32,14 +33,14 @@ if( ! class_exists( 'RT_POST_VIEWS' )){
 		public static function _set_post_views(){
 
 			# Run only if the post views option is set to THEME's post views module ----------
-			if( !NeuzinTheme::neuzin_options('post_view') || ! is_single() ){
+			if( !Theme::neuzin_options('post_view') || ! is_single() ){
 				return;
 			}
 
 			# Run only on the first page of the post ----------
 			$page = get_query_var( 'paged', 1 );
 
-			if( !NeuzinTheme::neuzin_options('post_view') || $page > 1  ){
+			if( !Theme::neuzin_options('post_view') || $page > 1  ){
 				return false;
 			}
 
@@ -61,7 +62,7 @@ if( ! class_exists( 'RT_POST_VIEWS' )){
 		 */
 		function _posts_column_views( $defaults ){
 
-			if( NeuzinTheme::neuzin_options('post_view') ){
+			if( Theme::neuzin_options('post_view') ){
 				$defaults['post_view'] = esc_html__( 'Views', 'neuzin-core' );
 			}
 

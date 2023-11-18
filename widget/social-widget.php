@@ -6,9 +6,9 @@
  */
 
 /**
-* About Widget with Social for footer by NeuzinTheme
+* About Widget with Social for footer by Theme
 **/
-class NeuzinTheme_Social_Widget extends WP_Widget {
+class Theme_Social_Widget extends WP_Widget {
 
 	public function __construct() {
 		$widget_ops = array(

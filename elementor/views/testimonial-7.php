@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
@@ -54,7 +54,7 @@ $getimg = Group_Control_Image_Size::get_attachment_image_html( $data, 'icon_imag
 					<?php
 					$id 			= get_the_id();
 					$designation 	= get_post_meta( $id, 'neuzin_tes_designation', true );
-					$content 		= NeuzinTheme_Helper::get_current_post_content();
+					$content 		= Helper::get_current_post_content();
 					$content 		= wp_trim_words( $content, $data['count'], '' );
 					$content 		= "<p>$content</p>";
 					$ratting	 	= get_post_meta( $id, 'neuzin_tes_rating', true );

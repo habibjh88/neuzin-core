@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 
 $prefix      = NEUZIN_CORE_THEME_PREFIX;
@@ -49,7 +49,7 @@ switch ( $data['orderby'] ) {
 }
 
 $query = new WP_Query( $args );
-$temp = NeuzinTheme_Helper::wp_set_temp_query( $query );
+$temp = Helper::wp_set_temp_query( $query );
 
 $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['col_sm']} col-xs-{$data['col_xs']}";
 ?>
@@ -62,7 +62,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 				$id            	= get_the_id();
 				$designation   	= get_post_meta( $id, 'neuzin_team_designation', true );
 				$socials       	= get_post_meta( $id, 'neuzin_team_socials', true );
-				$social_fields 	= NeuzinTheme_Helper::team_socials();
+				$social_fields 	= Helper::team_socials();
 				if ( $data['contype'] == 'content' ) {
 					$content = apply_filters( 'the_content', get_the_content() );
 				}
@@ -84,11 +84,11 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 									the_post_thumbnail( $thumb_size );
 								}
 								else {
-									if ( !empty( NeuzinTheme::neuzin_options('no_preview_image')['id'] ) ) {
-										echo wp_get_attachment_image( NeuzinTheme::neuzin_options('no_preview_image')['id'], $thumb_size );
+									if ( !empty( Theme::neuzin_options('no_preview_image')['id'] ) ) {
+										echo wp_get_attachment_image( Theme::neuzin_options('no_preview_image')['id'], $thumb_size );
 									}
 									else {
-										echo '<img class="wp-post-image" src="' . NeuzinTheme_Helper::get_img( 'noimage_520X562.jpg' ) . '" alt="'.get_the_title().'">';
+										echo '<img class="wp-post-image" src="' . Helper::get_img( 'noimage_520X562.jpg' ) . '" alt="'.get_the_title().'">';
 									}
 								}
 								?>
@@ -126,8 +126,8 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 			<div class="team-button"><a class="button-gradient-1" href="<?php echo esc_url( $data['see_button_link'] );?>"><?php echo esc_html( $data['see_button_text'] );?><i class="flaticon-next"></i></a></div>
 			<?php } ?>
 		<?php } else { ?>
-			<?php NeuzinTheme_Helper::pagination(); ?>
+			<?php Helper::pagination(); ?>
 		<?php } ?>
-		<?php NeuzinTheme_Helper::wp_reset_temp_query( $temp ); ?>
+		<?php Helper::wp_reset_temp_query( $temp ); ?>
 	</div>
 </div>

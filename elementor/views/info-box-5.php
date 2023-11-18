@@ -6,7 +6,7 @@
  */
 
 namespace radiustheme\Neuzin_Core;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Helper;
 use Elementor\Utils;
 use Elementor\Group_Control_Image_Size;
 use radiustheme\Lib\WP_SVG;

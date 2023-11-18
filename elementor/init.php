@@ -9,7 +9,7 @@ namespace radiustheme\Neuzin_Core;
 
 use Elementor\Plugin;
 use \WP_Query;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Helper;
 
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -30,11 +30,11 @@ class Custom_Widget_Init {
 
 	public function after_enqueue_styles_elementor_editor() {
 
-		wp_enqueue_style( 'flaticon', \NeuzinTheme_Helper::get_font_css( 'flaticon' ) );
+		wp_enqueue_style( 'flaticon', \Helper::get_font_css( 'flaticon' ) );
 
 	}
 
-	public function init() {
+	public function init($widgets_manager) {
 		require_once __DIR__ . '/base.php';
 
 		// Widgets -- filename=>classname /@dev
@@ -87,7 +87,8 @@ class Custom_Widget_Init {
 			require_once $file;
 
 			$classname = __NAMESPACE__ . '\\' . $class;
-			Plugin::instance()->widgets_manager->register( new $classname );
+			$widgets_manager->register( new $classname() );
+//			Plugin::instance()->widgets_manager->register( new $classname );
 		}
 	}
 
@@ -96,14 +97,14 @@ class Custom_Widget_Init {
 		// Get existing icons
 		$icons = $controls_registry->get_control( 'icon' )->get_settings( 'options' );
 		// Append new icons		
-		$flaticons = NeuzinTheme_Helper::get_flaticon_icons();
+		$flaticons = Helper::get_flaticon_icons();
 		// Then we set a new list of icons as the options of the icon control
 		$new_icons = array_merge( $flaticons, $icons );
 		$controls_registry->get_control( 'icon' )->set_settings( 'options', $new_icons );
 	}
 
 
-	public function widget_categoty( $class ) {
+	public function widget_categoty_old( $class ) {
 		$id         = NEUZIN_CORE_THEME_PREFIX . '-widgets'; // Category /@dev
 		$properties = array(
 			'title' => __( 'RadiusTheme Elements', 'neuzin-core' ),
@@ -112,8 +113,24 @@ class Custom_Widget_Init {
 		Plugin::$instance->elements_manager->add_category( $id, $properties );
 	}
 
+	public function widget_categoty( $elements_manager ) {
+		$id         = NEUZIN_CORE_THEME_PREFIX . '-widgets'; // Category /@dev
+		$categories[$id] = [
+			'title' => esc_html__( 'RadiusTheme Elements', 'the-post-grid' ),
+			'icon'  => 'fa fa-plug',
+		];
+
+		$get_all_categories = $elements_manager->get_categories();
+		$categories         = array_merge( $categories, $get_all_categories );
+		$set_categories     = function ( $categories ) {
+			$this->categories = $categories;
+		};
+
+		$set_categories->call( $elements_manager, $categories );
+	}
+
 	public function additional_tabs( $tabs ) {
-		$json_url = NeuzinTheme_Helper::get_asset_file( 'json/flaticon.json' );
+		$json_url = Helper::get_asset_file( 'json/flaticon.json' );
 
 		$flaticon = [
 			'name'          => 'flaticon',

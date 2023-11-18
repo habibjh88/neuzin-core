@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 
 $args = array(
@@ -46,7 +46,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 				<?php
 				$id 			= get_the_id();
 				$designation 	= get_post_meta( $id, 'neuzin_tes_designation', true );
-				$content 		= NeuzinTheme_Helper::get_current_post_content();
+				$content 		= Helper::get_current_post_content();
 				$content 		= wp_trim_words( $content, $data['count'], '' );
 				$content 		= "<p>$content</p>";
 				$ratting	 	= get_post_meta( $id, 'neuzin_tes_rating', true );

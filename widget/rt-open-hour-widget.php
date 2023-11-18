@@ -3,7 +3,7 @@
 * Widget API: Open Hour Widget class
 * By : Radius Theme
 */
-class NeuzinTheme_Open_Hour_Widget extends WP_Widget {
+class Theme_Open_Hour_Widget extends WP_Widget {
 	public $weekdays;
 	public function __construct() {
 		$widget_ops = array(

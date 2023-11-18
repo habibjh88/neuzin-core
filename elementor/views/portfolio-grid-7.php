@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 
 $thumb_size = 'neuzin-size7';
@@ -49,7 +49,7 @@ if ( $cat_single_grid != 0 ) {
 }
 
 $query = new WP_Query( $args );
-$temp = NeuzinTheme_Helper::wp_set_temp_query( $query );
+$temp = Helper::wp_set_temp_query( $query );
 
 $title_css ='';
 $title_size = $data['title_size'];
@@ -100,10 +100,10 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 									if ( has_post_thumbnail() ){
 										the_post_thumbnail( $thumb_size, ['class' => 'img-fluid mb-10 width-100'] );
 									} else {
-										if ( !empty( NeuzinTheme::neuzin_options('no_preview_image')['id'] ) ) {
-											echo wp_get_attachment_image( NeuzinTheme::neuzin_options('no_preview_image')['id'], $thumb_size );
+										if ( !empty( Theme::neuzin_options('no_preview_image')['id'] ) ) {
+											echo wp_get_attachment_image( Theme::neuzin_options('no_preview_image')['id'], $thumb_size );
 										} else {
-											echo '<img class="wp-post-image" src="' . NeuzinTheme_Helper::get_img( 'noimage_640X471.jpg' ) . '" alt="'.get_the_title().'">';
+											echo '<img class="wp-post-image" src="' . Helper::get_img( 'noimage_640X471.jpg' ) . '" alt="'.get_the_title().'">';
 										}
 									}
 								?>
@@ -134,8 +134,8 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 			<div class="portfolio-button"><a class="button-gradient-1" href="<?php echo esc_url( $data['see_button_link'] );?>"><?php echo esc_html( $data['see_button_text'] );?><i class="flaticon-next"></i></a></div>
 			<?php } ?>
 		<?php } else { ?>
-			<?php NeuzinTheme_Helper::pagination(); ?>
+			<?php Helper::pagination(); ?>
 		<?php } ?>
-		<?php NeuzinTheme_Helper::wp_reset_temp_query( $temp ); ?>
+		<?php Helper::wp_reset_temp_query( $temp ); ?>
 	</div>
 </div>

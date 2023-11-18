@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 
 $thumb_size = 'neuzin-size5';
@@ -48,7 +48,7 @@ if ( $cat_single_grid != 0 ) {
 }
 
 $query = new WP_Query( $args );
-$temp = NeuzinTheme_Helper::wp_set_temp_query( $query );
+$temp = Helper::wp_set_temp_query( $query );
 
 $gap_class = '';
 if ( $data['column_no_gutters'] == 'hide' ) {
@@ -103,7 +103,7 @@ $col_class = "col-lg-{$data['col_lg']} col-md-{$data['col_md']} col-sm-{$data['c
 			<div class="service-button"><a class="button-gradient-1" href="<?php echo esc_url( $data['see_button_link'] );?>"><?php echo esc_html( $data['see_button_text'] );?><i class="flaticon-next"></i></a></div>
 			<?php } ?>
 		<?php } else { ?>
-			<?php NeuzinTheme_Helper::pagination(); ?>
+			<?php Helper::pagination(); ?>
 		<?php } ?>
-		<?php NeuzinTheme_Helper::wp_reset_temp_query( $temp ); ?>
+		<?php Helper::wp_reset_temp_query( $temp ); ?>
 </div>

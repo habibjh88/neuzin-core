@@ -3,7 +3,7 @@
 * Widget API: Recent Post Widget class
 * By : Radius Theme
 */
-Class NeuzinTheme_Recent_Posts_With_Image_Widget extends WP_Widget {
+Class Theme_Recent_Posts_With_Image_Widget extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'rt_widget_recent_entries_with_image',

@@ -6,8 +6,8 @@
  */
 
 namespace radiustheme\Neuzin_Core;
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \WP_Query;
 ?>
 

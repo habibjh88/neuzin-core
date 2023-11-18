@@ -3,7 +3,7 @@
 * Widget API: Recent Product Widget class
 * By : Radius Theme
 */
-Class NeuzinTheme_Product_Box extends WP_Widget {
+Class Theme_Product_Box extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'rt-product-box',

@@ -3,7 +3,7 @@
 * Widget API: Recent Post Widget class
 * By : Radius Theme
 */
-Class NeuzinTheme_Post_Tab extends WP_Widget {
+Class Theme_Post_Tab extends WP_Widget {
 	public function __construct() {
 		$widget_ops = array(
 			'classname' => 'rt-post-tab',

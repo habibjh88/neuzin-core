@@ -72,37 +72,37 @@ function neuzin_post_share() {
 			),
 		);
 		
-		if ( NeuzinTheme::neuzin_options('post_share_facebook') == 0 ){
+		if ( Theme::neuzin_options('post_share_facebook') == 0 ){
 		unset($share_buttons['facebook-f']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_twitter') == 0 ){
+		if ( Theme::neuzin_options('post_share_twitter') == 0 ){
 		unset($share_buttons['twitter']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_google') == 0 ){
+		if ( Theme::neuzin_options('post_share_google') == 0 ){
 		unset($share_buttons['google-plus-g']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_linkedin') == 0 ){
+		if ( Theme::neuzin_options('post_share_linkedin') == 0 ){
 		unset($share_buttons['linkedin-in']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_whatsapp') == 0 ){
+		if ( Theme::neuzin_options('post_share_whatsapp') == 0 ){
 		unset($share_buttons['whatsapp']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_stumbleupon') == 0){
+		if ( Theme::neuzin_options('post_share_stumbleupon') == 0){
 		unset($share_buttons['stumbleupon']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_tumblr') == 0 ){
+		if ( Theme::neuzin_options('post_share_tumblr') == 0 ){
 		unset($share_buttons['tumblr']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_pinterest') == 0 ){
+		if ( Theme::neuzin_options('post_share_pinterest') == 0 ){
 		unset($share_buttons['pinterest-p']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_reddit') == 0 ){
+		if ( Theme::neuzin_options('post_share_reddit') == 0 ){
 		unset($share_buttons['reddit-alien']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_email') == 0 ){
+		if ( Theme::neuzin_options('post_share_email') == 0 ){
 		unset($share_buttons['envelope']);
 		}
-		if ( NeuzinTheme::neuzin_options('post_share_print') == 0 ){
+		if ( Theme::neuzin_options('post_share_print') == 0 ){
 		unset($share_buttons['print']);
 		}
 

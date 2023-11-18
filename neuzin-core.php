@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! defined( 'NEUZIN_CORE' ) ) {
-	define( 'NEUZIN_CORE', ( WP_DEBUG ) ? time() : '1.0' );
+	define( 'NEUZIN_CORE', ( WP_DEBUG ) ? time() : "1.0" );
 	define( 'NEUZIN_CORE_THEME_PREFIX', 'neuzin' );
 	define( 'NEUZIN_CORE_THEME_PREFIX_VAR', 'neuzin' );
 	define( 'NEUZIN_CORE_CPT_PREFIX', 'neuzin' );
@@ -160,7 +160,4 @@ if ( ! class_exists( 'reduxNewsflash' ) ) {
 		}
 	}
 }
-
-// Optimizer
-require_once 'optimizer/__init__.php';
 

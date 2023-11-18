@@ -7,11 +7,11 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 
 $slides = array();
-$default_img = NeuzinTheme_Helper::get_img( 'noimage.jpg' );
+$default_img = Helper::get_img( 'noimage.jpg' );
 
 foreach ( $data['slides'] as $slide ) {
 	$slides[] = array(

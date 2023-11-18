@@ -5,9 +5,9 @@
  * @version 1.0
  */
 
-if ( !class_exists( 'NeuzinTheme_Sidebar_Generator' ) ) {
+if ( !class_exists( 'Theme_Sidebar_Generator' ) ) {
 
-	class NeuzinTheme_Sidebar_Generator {
+	class Theme_Sidebar_Generator {
 
 		public $prefix = NEUZIN_CORE_THEME_PREFIX_VAR;
 		public $option_name = null;
@@ -227,4 +227,4 @@ if ( !class_exists( 'NeuzinTheme_Sidebar_Generator' ) ) {
 	}
 }
 
-new NeuzinTheme_Sidebar_Generator;
+new Theme_Sidebar_Generator;

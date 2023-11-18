@@ -7,8 +7,8 @@
 
 namespace radiustheme\Neuzin_Core;
 
-use NeuzinTheme;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Theme;
+use devofwp\Neuzin\Helper;
 use \RT_Postmeta;
 
 if ( ! defined( 'ABSPATH' ) ) exit;
@@ -26,7 +26,7 @@ $prefix = NEUZIN_CORE_CPT_PREFIX;
 ---------------------------------------*/
 $nav_menus = wp_get_nav_menus( array( 'fields' => 'id=>name' ) );
 $nav_menus = array( 'default' => __( 'Default', 'neuzin-core' ) ) + $nav_menus;
-$sidebars  = array( 'default' => __( 'Default', 'neuzin-core' ) ) + NeuzinTheme_Helper::custom_sidebar_fields();
+$sidebars  = array( 'default' => __( 'Default', 'neuzin-core' ) ) + Helper::custom_sidebar_fields();
 
 $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'neuzin-core' ), array( 'page', 'post', 'neuzin_team', 'neuzin_service', 'neuzin_portfolio', 'neuzin_testim' ), '', '', 'high', array(
 	'fields' => array(
@@ -291,7 +291,7 @@ $Postmeta->add_meta_box( 'neuzin_team_settings', __( 'Team Member Settings', 'ne
 		),
 		'neuzin_team_socials' => array(
 			'type'  => 'group',
-			'value'  => NeuzinTheme_Helper::team_socials()
+			'value'  => Helper::team_socials()
 		),
 	)
 ) );
@@ -363,7 +363,7 @@ $Postmeta->add_meta_box( 'neuzin_service_media', __( 'Service Icon image', 'neuz
 			  'label' => __( 'Service Icon', 'neuzin-core' ),
 			  'type'  => 'icon_select',
 			  'desc'  => __( "Choose a Icon for your service", 'neuzin-core' ),
-			  'options' => NeuzinTheme_Helper::get_icons(),
+			  'options' => Helper::get_icons(),
 			),
 			"neuzin_service_img" => array(
 				'label' => __( 'Service Image', 'neuzin-core' ),
@@ -435,7 +435,7 @@ $Postmeta->add_meta_box( 'neuzin_portfolio_share', __( 'Portfolio Social Share',
 		),
 		'neuzin_portfolio_icons' => array(
 			'type'  => 'group',
-			'value'  => NeuzinTheme_Helper::team_socials()
+			'value'  => Helper::team_socials()
 		),
 	)
 ) );

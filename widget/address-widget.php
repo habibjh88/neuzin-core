@@ -5,7 +5,7 @@
  * @version 1.0
  */
 
-class NeuzinTheme_Address_Widget extends WP_Widget {
+class Theme_Address_Widget extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
             'neuzin_address', // Base ID

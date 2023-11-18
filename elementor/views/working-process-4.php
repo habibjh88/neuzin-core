@@ -6,7 +6,7 @@
  */
 
 namespace radiustheme\Neuzin_Core;
-use NeuzinTheme_Helper;
+use devofwp\Neuzin\Helper;
 use Elementor\Utils;
 use radiustheme\Lib\WP_SVG;
 extract($data);
