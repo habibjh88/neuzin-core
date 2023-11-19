@@ -6,18 +6,18 @@
  */
 
 namespace devofwp\Neuzin_Core;
-
-use devofwp\Neuzin\Theme;
 use devofwp\Neuzin\Helper;
-use \RT_Postmeta;
+use \DOWP_Postmeta;
 
-if ( ! defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-if ( !class_exists( 'RT_Postmeta' ) ) {
+if ( !class_exists( 'DOWP_Postmeta' ) ) {
 	return;
 }
 
-$Postmeta = RT_Postmeta::getInstance();
+$Postmeta = DOWP_Postmeta::getInstance();
 
 $prefix = NEUZIN_CORE_CPT_PREFIX;
 
@@ -91,7 +91,7 @@ $Postmeta->add_meta_box( "{$prefix}_page_settings", __( 'Layout Settings', 'neuz
 					),
 					'default'   => 'default',
 				),
-				"{$prefix}_header_opt" => array(
+				"{$prefix}_header_visibility" => array(
 					'label' 	  => __( 'Header On/Off', 'neuzin-core' ),
 					'type'  	  => 'select',
 					'options' => array(
